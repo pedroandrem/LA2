@@ -8,10 +8,6 @@ def apelidos(nomes):
     nomes.sort(key=lambda x: (len(x.split())-1, x))
     return nomes
 
-##
-# Main function of the Python program.
-#
-##
 
 
 def main():
@@ -26,12 +22,6 @@ def main():
     print("out:",apelidos(nomes))
 
 
-##
-#
-# All tests in the folder "test" are executed
-# when the "Test" action is invoked.
-#
-##
 
 import unittest
 
