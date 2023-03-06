@@ -33,42 +33,12 @@ def formata(codigo):
             newline = False
             final += c
     return final
-#def formata(codigo):
-#    novaString = ' '.join(codigo.split())
-#    print(novaString)
-#    novaStr = ""
-#    for i in range(len(novaString)):
-#        if novaString[i] != '{' and novaString[i] != '}' and novaString[i] != ';':
-#            novaStr += novaString[i]
-#        elif novaString[i] == '{':
-#            novaStr +=  '{'+'\n' + '  '   
-#        elif novaString[i] == '}' and i != (len(novaString)-1):
-#            novaStr +=  '\n'+'}'+'\n  '
-#        elif novaString[i] == ';':
-#            novaStr += ';'+'\n  '
-#            
-# 
-#    novaStr += '}' 
-#    return novaStr
-
-
-##
-# Main function of the Python program.
-#
-##
 
 def main():
     print("<h4>formata</h4>")
     codigo = "int main() {int x;x=0;     x=x+1;}"
     print(formata(codigo))
 
-
-##
-#
-# All tests in the folder "test" are executed
-# when the "Test" action is invoked.
-#
-##
 
 import unittest
 
@@ -85,4 +55,4 @@ class formataTest(unittest.TestCase):
             
 if __name__ == '__main__':
     main()
-    #unittest.main()
+    unittest.main()
