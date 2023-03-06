@@ -14,7 +14,7 @@ A função deve devolver uma lista de tuplos, cada um com um cartão e um email,
 dando prioridade aos cartões com mais digitos descobertos e, em caso de igualdade
 neste critério, aos emails menores (em ordem lexicográfica).
 """
-
+#20%
 def tuploProcurado(lista, tuploP):
      for i in lista:
           if i[1] == tuploP[1]:
